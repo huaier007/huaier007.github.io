@@ -83,24 +83,30 @@
         <h2>Amusement</h2>
         <h3>music</h3>
     </section>
-    <div id="music-control">
-        <audio id="bg-music" src="D:\CloudMusic\toe - サニーボーイ・ラプソディ.mp3"></audio>
-        <button onclick="toggleMusic()">play/pause</button>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 huaier007's website. Copyright &copy;</p >
-    </footer>
-    <script>
-        function toggleMusic() {
-            var audio = document.getElementById("bg-music");
-            if (audio.paused) {
-                audio.play();
-            }
-            else {
-                audio.pause();
-            }
+    <div id="music">
+    <audio src="" id="dd" autoplay controls loop>
+    </audio>
+    <script type="text/javascript">
+        function dt() {
+            var dd = document.getElementById("dd");
+            dd.pause();
+        }
+        function st() {
+            var dd = document.getElementById("dd");
+            dd.play();
+        }
+        function rs() {
+            var dd = document.getElementById("dd");
+            dd.load();
         }
     </script>
+    </div>
+    <footer>
+        <p>&copy; 2025 huaier007's website. Copyright </p>
+    </footer>
+
+    <button onclick="dt()">pause</button>
+    <button onclick="st()">play</button>
+    <button onclick="rs()">reset</button>
 </body>
 </html>
