@@ -1,35 +1,100 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>huaier的个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huaier007's website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        #music-control {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #music-control button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor:pointer
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-<body style="background-color:white;">
+<body>
+    <header>
+        <h1>welcome to huaier007's website</h1>
+    </header>
     <nav>
-        <div>
         <a href="#Home">Home</a>
         <a href="#Notes">Notes</a>
-        <a href="#Amusement">Contact</a>
-    </div>
+        <a href="#Amusement">Amusement</a>
     </nav>
-
-    <div>
-        <section id="Home">
-            <h2>Home</h2>
-            <p>a student currently studying Information Security Technology Application</p>
-        </section>
-
-        <section id="Notes">
-            <h2>Notes</h2>
-            <h3>Cryptography</h3>
-            <h3>commonlisp</h3>
-        </section>
-
-        <section id="Amusement">
-            <h2>Amusement</h2>
-            <p>音乐推荐</p>
-            
-        </section>
+    <section id="Home">
+        <h2>Home</h2>
+        <p>a student currently studying Information Security Technology Application.</p>
+    </section>
+    <section id="Notes">
+        <h2>Notes/h2>
+        <p>Cryptography</p>
+        <p>Common lisp</p>
+    </section>
+    <section id="Amusement">
+        <h2>music</h2>
+    </section>
+    <div id="music-control">
+        <audio id="bg-music" src="D:\CloudMusic\toe - サニーボーイ・ラプソディ.mp3"></audio>
+        <button onclick="toggleMusic()">play/pause</button>
     </div>
+    <script>
+        function toggleMusic() {
+            var audio = document.getElementById("bg-music");
+            if (audio.paused) {
+                audio.play()
+            }
+            else {
+                audio.pause()
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 huaier007's website. Copyright &copy;</p >
+    </footer>
 </body>
 </html>
