@@ -37,15 +37,7 @@
             background-color: #fff;
             border-radius: 5px;
         }
-        #music-control {
-            text-align: center;
-            margin-top: 20px;
-        }
-        #music-control button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor:pointer
-        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -54,6 +46,15 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        #music-control {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #music-control button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor:pointer
         }
     </style>
 </head>
@@ -86,6 +87,10 @@
         <audio id="bg-music" src="D:\CloudMusic\toe - サニーボーイ・ラプソディ.mp3"></audio>
         <button onclick="toggleMusic()">play/pause</button>
     </div>
+
+    <footer>
+        <p>&copy; 2025 huaier007's website. Copyright &copy;</p >
+    </footer>
     <script>
         function toggleMusic() {
             var audio = document.getElementById("bg-music");
@@ -97,8 +102,5 @@
             }
         }
     </script>
-    <footer>
-        <p>&copy; 2025 huaier007's website. Copyright &copy;</p >
-    </footer>
 </body>
 </html>
