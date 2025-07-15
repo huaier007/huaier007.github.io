@@ -1,9 +1,13 @@
 ---
 title: About others
-author: Tao He
-date: 2022-02-04
-category: Jekyll
-layout: post
+author: huaier
+date: 2025-07-15
+category: about
+layout: home
 ---
 
-This is an about page for "others" in the collections.
+# About
+I'm huaier,a first-year student currently studying Information Security Technology Application.     
+### 🌐 **Contact**
+- [Github](https://github.com/huaier007)    
+This blog is under construction...
