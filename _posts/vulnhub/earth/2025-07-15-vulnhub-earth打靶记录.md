@@ -105,6 +105,7 @@ layout: post
   touch /tmp/kcM0Wewe
   ```
 并再次访问```/usr/bin/reset_root```
+
 ![哎呀，加载失败了](./创建文件.png)
 提示修改密码为Earth
 再次查看id 已取得root权限，cd至root目录查看到root_flag文件
